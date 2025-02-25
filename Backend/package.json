@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "build": "cd Backend && npm install && cd ../Frontend && npm install && npm run build",
+    "start": "node Backend/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Yash",
   "license": "ISC",
@@ -19,3 +20,4 @@
     "nodemon": "^3.1.9"
   }
 }
+
